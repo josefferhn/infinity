@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+	--bg-header:#29bffe;
+	--menu-hover:#fff;
+	--color-azul:#29bffe;
+	--color-general:#6a6a6a;
+	--color-azul-oscuro:#3980fc;
+	--color-iconos:#357cfd;
+	--color-titulos:#000;
+	--color-amarillo:#f2ca12;
+	--color-gris:#dbdbdb;
+	--bg-gradient:linear-gradient(120deg, rgba(41,191,254,1) 42%, rgba(57,127,251,1) 66%);
+	--bg-gradient2:linear-gradient(120deg, rgba(57,127,251,1) 42%, rgba(41,191,254,1) 66%);
+}
+body{
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: var(--color-general);
+	font-weight: 300;
+	line-height: 1.7;
+}
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-titulos);
+}
+
+header{
+	/*background-color: var(--bg-header);*/
+	/*background: var(--bg-gradient);*/
+	padding: 10px 0;
+	width: 100%;
+	position: absolute;
+}
+.sticky{
+	position: sticky;
+	top: 0;
+	background: var(--bg-gradient);
+	z-index: 1000;
+}
+
+.section{
+	padding: 7% 0;
+}
+
+#hero{
+	background-color: var(--color-azul);
+	background: var(--bg-gradient);
+	background-image: url("../img/bg-banner.jpg");
+	background-position: top center;
+	background-size: cover;	
+	padding-top: 7%;
+}
+
+#hero h1{
+	color: #fff;
+	margin-top: 25%;
+	font-weight: 600;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.btn-dark{
+	background-color: #000;
+	padding: 13px 30px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.btn-dark i{
+	font-size: 20px;
+}
+
+
+
+.circle{
+	background: var(--bg-gradient);
+	border-radius: 100%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	padding-top: 6px;
+}
+.circle-icon{
+	border-radius: 100%;
+	text-align: center;
+	border: 2px solid var(--color-azul-oscuro);
+	width: 50px;
+	height: 50px;
+	padding-top: 5px;
+	font-size: 25px;
+	color: var(--color-iconos);
+}
+
+#overview h4{
+	font-size: 16px;
+}
+#overview h2{
+	font-weight: 600;
+}
+#overview h5,
+.text-title{
+	font-size: 18px;
+}
+
+.regular-h2{
+	font-weight: 300 !important;
+	margin-top: 70px;
+}
+
+#overview-right h5{
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+#overview-right article p{
+	color: var(--color-titulos);
+	font-weight: 400;
+}
+
+.img-shadow{
+	box-shadow: 0px 0px 40px 0px #ddd;
+}
+.img-bottom{
+	margin-top: 40% !important;
+}
+
+
+
+#features{
+	background: var(--bg-gradient2);
+	padding-bottom: 0;
+}
+
+.text-white{
+	color: #fff;
+}
+
+#features .text-title{
+	font-size: 20px;
+	font-weight: 600;
+}
+#features .mt-5{
+	margin-top: 60px !important;
+}
+
+#features img{
+	margin-bottom: -50px !important;
+}
+
+.title-section{
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.box-review{
+	padding: 50px 40px;
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.box-review img{
+	width: 100px !important;
+}
+.group-stars{
+	color: var(--color-amarillo);
+}
+
+.icon-quote{
+	position: absolute;
+	right: 0;
+	top: -50px;
+	color: var(--color-gris);
+	font-size: 50px;
+}
+
+.text-medium{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+#video{
+	background-image: url("../img/bg-parallax1.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-color: rgba(0,0,0,0.80);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 10% 0;
+}
+#video .circle-icon{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	padding-top: 0;
+	background-color: #fff;
+	border: 0;
+	transition: all 0.3s ease-in-out;
+}
+#video .circle-icon:hover{
+	background-color: var(--color-azul);
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.screenshots-carousel img{
+	/*filter: grayscale(1);*/
+	opacity: .10;
+}
+.screenshots-carousel .center img{
+	/*filter: grayscale(0);*/
+	opacity: 1;
+}
+
+
+#pricing{
+	background-image: url("../img/bg-parallax2.jpg");
+	background-size: cover;
+	background-position: top center;
+}
+
+#pricing .title-section{
+	color: #fff;
+}
+
+.card-pricing{
+	font-size: 13px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 0;
+	border: 0;
+}
+.card-pricing .card-header{
+	background: var(--bg-gradient2);
+	color: #fff;
+	border-radius: 0;
+	padding: 20px 0;
+}
+.card-pricing .card-header h3{
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+}
+.card-pricing .card-header h4{
+	font-size: 14px;
+}
+span.signo-dolar{
+	font-size: 12px;
+	top: 0;
+	position: absolute;
+	left: -10px;
+}
+.card-pricing .card-body{
+	background: #fff;
+	padding: 40px 0;
+}
+.card-pricing .card-footer{
+	background: #fff;
+	padding: 20px 0;
+}
+.card-pricing .card-footer a{
+	font-size: 16px;
+	color: var(--color-general);
+	font-weight: 600;
+	text-decoration: none;
+}
+.card-pricing .card-footer a:hover{
+	color: var(--color-azul);	
+}
+
+
+
+footer{
+	background-color: #fafafa;
+	padding: 30px 0;
+}
+footer .title-section{
+	font-weight: 400;
+}
+.list-socials i{
+	font-size: 25px;
+  	color: var(--color-titulos);
+}
+.list-socials i:hover{
+	font-size: 25px;
+  	color: var(--color-azul);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
